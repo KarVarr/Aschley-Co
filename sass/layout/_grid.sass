@@ -2,6 +2,7 @@
 .hand 
     display: flex
     background-color: $color-hand-b
+    max-height: $height-section
     color: $color-text-grey
     &__left 
         display: flex
@@ -27,7 +28,7 @@
 // section SOUP
 .soup 
     display: flex
-    max-height: 80rem
+    max-height: $height-section
     &__left 
         display: flex
         flex-direction: column
@@ -49,4 +50,30 @@
             left: 4rem  
             
         
+// section LIPSTICK
+.lipstick 
+    display: flex
+    &__img 
+    margin: 11rem 2rem 11rem 2rem
+    .img 
+        max-width: 80rem
+    &__text 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: 3rem
+        max-width: 30rem
+        .text-h1
+            margin-bottom: 1rem
+
+        .text-dicription-lg
+            line-height: 1.2
+            margin-bottom: 4rem    
+        .info-text, .text-md
+            margin-bottom: 2rem    
+        
             
+
+    
+    
+           

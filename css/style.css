@@ -41,9 +41,17 @@ body {
   font-size: 1.4rem;
 }
 
-.text-discrition {
+.text-md {
+  font-size: 1.6rem;
+}
+
+.text-discription {
   font-size: 2.5rem;
   padding: 2.7rem;
+}
+
+.text-dicription-lg {
+  font-size: 2.8rem;
 }
 
 .btn {
@@ -66,6 +74,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: #9C8554;
+  max-height: 80rem;
   color: #B2B2B2;
 }
 
@@ -144,6 +153,45 @@ body {
   position: absolute;
   bottom: 4rem;
   left: 4rem;
+}
+
+.lipstick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 11rem 2rem 11rem 2rem;
+}
+
+.lipstick .img {
+  max-width: 80rem;
+}
+
+.lipstick__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem;
+  max-width: 30rem;
+}
+
+.lipstick__text .text-h1 {
+  margin-bottom: 1rem;
+}
+
+.lipstick__text .text-dicription-lg {
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.lipstick__text .info-text, .lipstick__text .text-md {
+  margin-bottom: 2rem;
 }
 
 .header {
