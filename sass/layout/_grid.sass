@@ -4,25 +4,34 @@
     background-color: $color-hand-b
     max-height: $height-section
     color: $color-text-grey
-    &__left 
+
+    @media only screen and(max-width: 670px)
+        flex-direction: column
+        max-height: 100%
+        
+    &__left
+        max-width: 37.5rem  
+        padding: 4rem
         display: flex
         flex-direction: column
         justify-content: space-between
-        padding: 3.5rem
-    &__left-text 
+        @media only screen and(max-width: 670px)
+            text-align: center
+
+
+    .info-text 
+        font-size: 1.5rem
         p
             margin-bottom: 2rem
  
-    &__left-btn 
+   
 
     .btn 
         color: $color-text-grey
         border-bottom: 1px solid $color-text-grey
     &__right 
-        display: flex
-        flex-direction: column
-        align-items: end
-    &__right-img 
+        text-align: right
+    
         
 
 // section SOUP
@@ -38,6 +47,9 @@
             position: absolute
             bottom: 4rem 
             left: 4rem   
+            @media only screen and(max-width: 450px)
+                bottom: 1rem
+                left: 1rem
         
     &__right 
         display: flex
@@ -48,24 +60,37 @@
             position: absolute
             bottom: 4rem 
             left: 4rem  
+            @media only screen and(max-width: 450px)
+                bottom: 1rem
+                left: 1rem
             
         
 // section LIPSTICK
 .lipstick 
     display: flex
+    align-items: center
+    max-height: $height-section
+    background-color: $color-lipstick-b
+    @media only screen and(max-width: 670px)
+        flex-direction: column
+        max-height: 100%
+        
     &__img 
-    margin: 11rem 2rem 11rem 2rem
-    .img 
+        margin: 11rem 0rem 11rem 2rem
         max-width: 80rem
+        @media only screen and(max-width: 450px)
+                margin: 3rem
+        .img 
+            max-width: 100%
     &__text 
         display: flex
         flex-direction: column
-        justify-content: center
         margin: 3rem
         max-width: 30rem
+        text-align: left
         .text-h1
             margin-bottom: 1rem
-
+        
         .text-dicription-lg
             line-height: 1.2
             margin-bottom: 4rem    
@@ -73,7 +98,131 @@
             margin-bottom: 2rem    
         
             
+//section MODERN
+.modern 
+    display: flex
+    background-color: $color-modern-b
+    color: $color-text-grey
+    max-height: $height-section
+    @media only screen and(max-width: 670px)
+        flex-direction: column
+        max-height: 100%
+    &__left
+        max-width: 37.5rem  
+        padding: 4rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media only screen and(max-width: 670px)
+            text-align: center
+   
+         
+    .info-text 
+        font-size: 1.5rem
+        p
+            margin-bottom: 2rem
+
+    .btn 
+        color: $color-text-grey
+        border-bottom: 1px solid $color-text-grey
+    &__right 
+        
+        text-align: right
+            
+  
+    //section HIP-HOP
+.hiphop 
+    max-height: $height-section
+    position: relative
+    background-color: #a3a8ac
+    
+    &__text 
+        position: absolute
+        top: 6.3rem
+        left: 0
+        max-width: 37.5rem  
+        margin: 4rem
+        @media only screen and(max-width: 450px)
+            height: 100%
+            top: 0
+            width: 40%
+            margin: 1rem
+            
+        .text-md
+            line-height: 1.3
+            @media only screen and(max-width: 450px)
+                font-size: 1.3rem
+        .text-h1 
+            margin-bottom: 1rem
+        .info-text 
+            font-size: $text-xl25
+            margin-bottom: 4rem
+            @media only screen and(max-width: 450px)
+                margin-bottom: 1rem
+            @media only screen and(max-width: 450px)
+                font-size: 1.3rem
 
     
+    //HAND WASH
+
+.handwach 
+    display: flex
+    background-color: $color-handwash-b
+    color: $color-text-grey
+    @media only screen and(max-width: 670px)
+        flex-direction: column
+        max-height: 100%
+        
+    &__left 
+        max-width: 37.5rem  
+        padding: 4rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media only screen and(max-width: 670px)
+            text-align: center
+        
+    .info-text 
+        font-size: 1.5rem
+        p
+            margin-bottom: 2rem
+
+        .btn 
+            color: $color-text-grey
+            border-bottom: 1px solid $color-text-grey
+    &__right 
+        text-align: right
+        
+         
+            
+    //INDUSTRY 
+
+.industry 
+    display: flex
+    background-color: $color-industry-b
+    color: $color-text-grey
+    @media only screen and(max-width: 670px)
+        flex-direction: column
+        max-height: 100%
+        
+    &__left
+        max-width: 37.5rem  
+        padding: 4rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media only screen and(max-width: 670px)
+            text-align: center
+        
+    .info-text 
+        font-size: 1.5rem
+        p
+            margin-bottom: 2rem
+    .btn 
+        color: $color-text-grey
+        border-bottom: 1px solid $color-text-grey
+
+    &__right 
+        text-align: right
     
-           
+       

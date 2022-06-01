@@ -3,10 +3,13 @@
     background-color: $color-header-b
     max-height: $height-section
     position: relative
-    &__box
-       
+    @media only screen and(max-width: 450px)
+        flex-direction: column-reverse
+        text-align: center
+    
     &__img 
-        position: relative  
+        position: relative
+        
         .learn 
             position: absolute
             bottom: -7rem
@@ -19,6 +22,10 @@
             text-align: left
             background-color: #1b1b1b
             color: #f1f1ee
+            @media only screen and(max-width: 450px)
+                display: none
+                
+
             .btn
                 color: currentColor
                 border-bottom: 1px solid currentColor
@@ -57,4 +64,6 @@
         p
             margin-bottom: 2rem
     
-        
+    .text-discription
+        @media only screen and(max-width: 450px)
+            font-size: 1.7rem   
