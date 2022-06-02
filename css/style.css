@@ -78,19 +78,34 @@ body {
   font-size: 2.8rem;
 }
 
+.title {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 670px) {
+  .title {
+    margin: 0 auto;
+  }
+}
+
 .btn {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px solid #262626;
   color: #262626;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-size: 1.2rem;
+  -webkit-animation: pulsate 1s;
+          animation: pulsate 1s;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
 .btn:hover {
   -webkit-box-shadow: 2px 2px 5px rgba(38, 38, 38, 0.4);
           box-shadow: 2px 2px 5px rgba(38, 38, 38, 0.4);
-  background-color: #96ebf6;
+  background-color: #e7e7e78c;
+  color: #262626 !important;
 }
 
 .footer {
@@ -149,6 +164,7 @@ body {
   border: none;
   border-bottom: 2px solid #B2B2B2;
   outline: none;
+  color: #B2B2B2;
 }
 
 .footer .input-form button {
